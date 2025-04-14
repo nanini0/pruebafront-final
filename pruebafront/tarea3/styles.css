@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+header {
+
+    background-color: #4d719a;
+
+    color: white;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+}
+
+nav{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+nav ul {
+
+    justify-content: space-between;
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+nav ul li {
+    background-color: #386191;
+    display: inline;
+    margin: 10px;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    
+
+}
+
+nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.banner{
+    background-color: #B3D9FF;
+    justify-items: center;
+    height: 100px;
+    align-content: center;
+ 
+}
+.ofrecemos{
+    text-align: center;
+    width: 100%;
+    background-color: #B3D9FF;
+    height: 100px;
+}
+.contenido{
+
+    background-color: #B3D9FF;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: space-between;
+    height: auto; /* Altura automática para que crezca con el contenido */
+    padding: 20px 0; /* Espacio vertical */
+    gap: 20px; /* Espacio entre artículos */
+}
+.contenido article{
+
+    box-shadow: 0 6px 12px rgba(0,102,204,0.3);
+    background-color: #4DA6FF;
+    width: calc(50% - 30px); /* 50% del contenedor menos el espacio del gap */
+    height: 250px;
+    padding: 30px;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    margin-bottom: 20px; /* Espacio entre filas */
+    
+}
+.contenido article h4{
+    text-align: center;
+}
+.contenido article img{
+    height: 90px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+footer{
+    
+    background-color: #4d719a;
+    height: 100px;
+    justify-items: center;
+    align-content: center;
+}
+
+footer a img{
+    height: 30px;
+    
+    margin: 10px ; /* Centra la imagen horizontalmente */
+}
