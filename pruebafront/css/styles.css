@@ -1,0 +1,106 @@
+body {
+    padding-top: 56px; /* Ajuste para el navbar fijo */
+    margin: 0;         /* Elimina márgenes por defecto */
+    background-color: #e9e9e9;
+  }
+  
+  .navbar-bmw {
+    background-color: #000000; 
+    border-bottom: 2px solid #0066B1; 
+  }
+  #carouselExampleFade {
+    width: 100%;       
+    margin: 0 auto;   
+  }
+  
+  #carouselExampleFade .carousel-inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%; 
+    overflow: hidden;    
+  }
+  
+  #carouselExampleFade .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #carouselExampleFade .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    background-color: #f8f9fa; 
+  }
+
+  .carousel-item {
+    position: relative; 
+  }
+  /* aca inicia el css del texto dentro de la imagen*/
+  .carousel-text {
+    position: absolute;
+    bottom: 120px; /* 50px por encima de los botones */
+    left: 20px;
+    z-index: 15; /* Mayor que el z-index de los botones (10) */
+    color: white !important; /* Texto blanco */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Sombra para la letra */
+    max-width: 60%; /* Ancho máximo para no chocar con imagen */
+    padding: 15px;
+    background: rgba(0,0,0,0.5); /* Fondo semitransparente opcional */
+    border-radius: 8px;
+  }
+  
+  /* Asegura contraste en todas las imágenes */
+  .carousel-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-text p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  /* aca termina el css del texto dentro de la imagen*/
+  .carousel-buttons {
+    position: absolute;
+    bottom: 20px;    /* Distancia desde el fondo */
+    left: 20px;      /* Distancia desde la izquierda */
+    z-index: 10;     /* Asegura que estén sobre la imagen */
+    display: flex;
+    gap: 10px;       /* Espacio entre botones */
+  }
+  
+
+
+  .carousel-item {
+  position: relative;
+}
+
+.carousel-content-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 500px; 
+}
+
+.carousel-content-wrapper img {
+  width: 60%; 
+  object-fit: cover;
+}
+
+.carousel-text {
+  width: 40%; 
+  padding: 2rem;
+  color: #333; 
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
